@@ -1,0 +1,2278 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investor Day Zaragoza · 20 Junio 2026 — El Método RICO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="landing-zaragoza-v2.css" />
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════
+     NAV
+════════════════════════════════════════════ -->
+    <nav class="nav">
+      <div class="nav__inner">
+        <div class="nav__logo">EL MÉTODO <span>RICO</span></div>
+        <a href="#entradas" class="btn btn--primary btn--sm nav__cta"
+          >Consigue tu entrada</a
+        >
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero__inner">
+          <!-- Columna izquierda: copy (sin CTA) -->
+          <div class="hero__left">
+            <div class="hero__meta">
+              <span class="badge badge--outline">INVESTOR DAY ZARAGOZA 2026</span>
+            </div>
+
+            <h1 class="hero__headline">
+              Haz crecer<br />
+              <em>tu dinero sin nómina</em>
+            </h1>
+
+            <p class="hero__subhead">
+              5 horas con Richard Gracia en las que descubrirás los
+              <strong>5 pilares de la libertad financiera</strong> que ya han
+              transformado a más de 16.000 personas.
+            </p>
+          </div>
+          <!-- /hero__left -->
+
+          <!-- Columna derecha: vídeo Vimeo -->
+          <div class="hero__right">
+            <div class="hero__video-wrap" id="heroVideoWrap">
+              <iframe
+                id="heroVimeoIframe"
+                src="https://player.vimeo.com/video/1155149667?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&controls=0&dnt=1"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                title="Investor Day Zaragoza 2026 — El Método RICO"
+              ></iframe>
+
+              <!-- Capa de play central (antes de iniciar) -->
+              <div class="vp-overlay" id="vpOverlay">
+                <button class="vp-play-big" id="vpPlayBig" aria-label="Reproducir">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+
+              <!-- Barra de controles -->
+              <div class="vp-controls" id="vpControls">
+                <!-- Play / Pause -->
+                <button class="vp-btn" id="vpPlayPause" aria-label="Play/Pause">
+                  <svg class="vp-icon vp-icon--play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="vp-icon vp-icon--pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+
+                <!-- Barra de progreso -->
+                <div class="vp-progress" id="vpProgress">
+                  <div class="vp-progress__fill" id="vpFill"></div>
+                  <div class="vp-progress__thumb" id="vpThumb"></div>
+                </div>
+
+                <!-- Volumen -->
+                <button class="vp-btn" id="vpMute" aria-label="Silenciar">
+                  <svg class="vp-icon vp-icon--vol" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                  <svg class="vp-icon vp-icon--mute" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                </button>
+
+                <!-- Fullscreen -->
+                <button class="vp-btn" id="vpFullscreen" aria-label="Pantalla completa">
+                  <svg class="vp-icon vp-icon--fs" viewBox="0 0 24 24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                  <svg class="vp-icon vp-icon--ex" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /hero__right -->
+
+          <!-- CTA — tercer hijo del grid: bajo la col izquierda en desktop, bajo el vídeo en móvil -->
+          <div class="hero__cta-group">
+            <a href="#entradas" class="btn btn--primary btn--lg hero__cta-btn">
+              <span class="hero__cta-btn__main">Quiero mi entrada</span>
+              <span class="hero__cta-btn__sub">Entradas desde 12€</span>
+            </a>
+          </div>
+        </div>
+        <!-- /hero__inner -->
+
+        <!-- Info evento: ancho completo, debajo de ambas columnas -->
+        <div class="hero__info-row">
+          <div class="hero__info-item">
+            <div class="hero__info-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="1.5"
+                  y="3"
+                  width="13"
+                  height="11.5"
+                  rx="2"
+                  stroke="#FBC101"
+                  stroke-width="1.5"
+                />
+                <path d="M1.5 7h13" stroke="#FBC101" stroke-width="1.5" />
+                <path
+                  d="M5 1.5V4M11 1.5V4"
+                  stroke="#FBC101"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="hero__info-content">
+              <span class="hero__info-label">Fecha</span>
+              <span class="hero__info-text">Sábado, 20 de junio de 2026</span>
+            </div>
+          </div>
+          <div class="hero__info-item">
+            <div class="hero__info-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="8"
+                  cy="8"
+                  r="6.5"
+                  stroke="#FBC101"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8 4.5V8l2.5 1.5"
+                  stroke="#FBC101"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="hero__info-content">
+              <span class="hero__info-label">Horario</span>
+              <span class="hero__info-text">09:00 – 14:00h</span>
+            </div>
+          </div>
+          <div class="hero__info-item">
+            <div class="hero__info-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.75 4.5 8.5 4.5 8.5S12.5 9.75 12.5 6c0-2.485-2.015-4.5-4.5-4.5z"
+                  stroke="#FBC101"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="8"
+                  cy="6"
+                  r="1.5"
+                  stroke="#FBC101"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <div class="hero__info-content">
+              <span class="hero__info-label">Lugar</span>
+              <span class="hero__info-text">World Trade Center Zaragoza</span>
+            </div>
+          </div>
+        </div>
+        <!-- /hero__info-row -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     BONUS STRIP
+════════════════════════════════════════════ -->
+    <div class="bonus-strip">
+      <div class="bonus-strip__inner container">
+        <span class="bonus-strip__icon"
+          ><svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect
+              x="2"
+              y="9"
+              width="18"
+              height="3.5"
+              rx="1"
+              stroke="#111"
+              stroke-width="1.5"
+            />
+            <rect
+              x="3.5"
+              y="12.5"
+              width="15"
+              height="7.5"
+              rx="1"
+              stroke="#111"
+              stroke-width="1.5"
+            />
+            <path d="M11 9v11" stroke="#111" stroke-width="1.5" />
+            <path
+              d="M11 9C11 9 8 7 8 4.5a3 3 0 0 1 3 3zM11 9c0 0 3-2 3-4.5a3 3 0 0 0-3 3z"
+              stroke="#111"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></span>
+        <span class="bonus-strip__text">
+          Todos los asistentes reciben de <strong>regalo</strong> una Sesión de
+          Diagnóstico Financiero personalizada — valorada en <span>49€</span> —
+          incluida en el precio de tu entrada.
+        </span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+     STATS
+════════════════════════════════════════════ -->
+    <section class="section" style="padding-bottom: 0">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">+16.000</div>
+            <div class="stat-label">
+              personas formadas en<br />inversión y finanzas
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num stat-num--yellow">+16</div>
+            <div class="stat-label">
+              años de experiencia<br />en inversiones reales
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-label">
+              libros bestseller sobre<br />finanzas e inversión
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">+2.1M€</div>
+            <div class="stat-label">
+              patrimonio gestionado<br />por alumnos del método
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     PARA QUIÉN
+════════════════════════════════════════════ -->
+    <section class="section" id="para-quien">
+      <div class="container">
+        <div class="section-label section-label--dark">
+          Este evento es para ti si...
+        </div>
+        <h2 class="section-title">
+          ¿Te suena <em>alguna</em> de estas situaciones?
+        </h2>
+        <p class="section-body">
+          Si marcas al menos una de estas casillas, el Investor Day es
+          exactamente lo que necesitas ahora mismo.
+        </p>
+
+        <div class="for-whom__grid">
+          <div class="for-whom__item">
+            <div class="for-whom__check">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="#FBC101"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="for-whom__text"
+              >Tienes entre 10.000 y 100.000€ ahorrados pero no sabes qué hacer
+              con ellos para que crezcan.</span
+            >
+          </div>
+          <div class="for-whom__item">
+            <div class="for-whom__check">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="#FBC101"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="for-whom__text"
+              >Trabajas cada mes pero sientes que tu dinero no avanza — pagas,
+              ahorras un poco, y vuelta a empezar.</span
+            >
+          </div>
+          <div class="for-whom__item">
+            <div class="for-whom__check">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="#FBC101"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="for-whom__text"
+              >Quieres invertir pero el miedo a perder lo que has ahorrado te
+              frena y no sabes por dónde empezar.</span
+            >
+          </div>
+          <div class="for-whom__item">
+            <div class="for-whom__check">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="#FBC101"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="for-whom__text"
+              >Sueñas con una jubilación tranquila y con dejar algo a tus hijos,
+              pero no tienes un plan claro.</span
+            >
+          </div>
+          <div class="for-whom__item">
+            <div class="for-whom__check">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="#FBC101"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="for-whom__text"
+              >Buscas más tiempo para ti y tu familia sin depender de un trabajo
+              al que no puedes faltar.</span
+            >
+          </div>
+          <div class="for-whom__item">
+            <div class="for-whom__check">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12">
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="#FBC101"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="for-whom__text"
+              >Ya has probado otras formaciones o asesorías pero sigues sin ver
+              resultados concretos en tu vida.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-label section-label--light">
+          Lo que dicen quienes ya estuvieron
+        </div>
+        <h2 class="section-title">
+          Resultados <em>reales</em> de asistentes anteriores
+        </h2>
+        <p class="section-body">
+          Personas con empleo estable, sin experiencia previa en inversión, que
+          dieron el paso.
+        </p>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">MP</div>
+              <div>
+                <div class="testimonial-name">Marta Pérez</div>
+                <div class="testimonial-meta">
+                  Madrid · Profesora · Asistente Investor Day 2024
+                </div>
+              </div>
+              <div class="testimonial-result">×9</div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Empecé con 200€/mes invertidos y en 8 meses superé los 1.800€ de
+              ingresos pasivos. Nunca pensé que fuera posible con mi sueldo. El
+              evento me dio el mapa que me faltaba."
+            </p>
+            <span class="testimonial-tag">Investor Day · Madrid 2024</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">CR</div>
+              <div>
+                <div class="testimonial-name">Carlos Ruiz</div>
+                <div class="testimonial-meta">
+                  Valencia · Ingeniero · Asistente Investor Day 2025
+                </div>
+              </div>
+              <div class="testimonial-result">×4.2</div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Tenía 60.000€ parados en el banco y no sabía qué hacer. Después
+              del evento lo tenía claro: tres tipos de activo, un plan a 4 años.
+              Ya llevo 14 meses y va exactamente como me explicaron."
+            </p>
+            <span class="testimonial-tag">Investor Day · Valencia 2025</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">SG</div>
+              <div>
+                <div class="testimonial-name">Sara González</div>
+                <div class="testimonial-meta">
+                  Bilbao · Enfermera · Asistente Investor Day 2024
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                /></svg
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="#FBC101"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 1l1.545 4.757H14L9.727 8.693l1.545 4.757L7 10.514l-4.272 2.936 1.545-4.757L0 5.757h5.455L7 1z"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Lo que más me sorprendió fue lo práctico que es. No es una charla
+              de motivación — es un método. Salí con mi plan escrito en papel y
+              lo he cumplido casi al 100%."
+            </p>
+            <span class="testimonial-tag">Investor Day · Bilbao 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     SPEAKER — RICHARD GRACIA
+════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="speaker__inner">
+          <div class="speaker__img-wrap">
+            <div class="speaker__img-placeholder">
+              <!-- Reemplazar con imagen real de Richard -->
+              <div style="text-align: center; color: #555; padding: 40px">
+                <div
+                  style="
+                    font-family: &quot;Oswald&quot;, sans-serif;
+                    font-size: 14px;
+                    letter-spacing: 0.08em;
+                    margin-bottom: 8px;
+                  "
+                >
+                  FOTOGRAFÍA
+                </div>
+                <div
+                  style="
+                    font-family: &quot;Oswald&quot;, sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #fff;
+                  "
+                >
+                  Richard Gracia
+                </div>
+              </div>
+            </div>
+            <div class="speaker__img-badge">
+              <div class="speaker__img-badge-num">+16K</div>
+              <div class="speaker__img-badge-label">alumnos<br />formados</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-label section-label--dark">El ponente</div>
+            <h2 class="section-title">
+              ¿Quién es<br /><em>Richard Gracia?</em>
+            </h2>
+            <p class="section-body" style="margin-bottom: 8px">
+              Richard no enseña teoría. Enseña exactamente lo que él hace — y lo
+              que ha enseñado a hacer a más de 16.000 personas con resultados
+              documentados.
+            </p>
+
+            <div class="speaker__credentials">
+              <div class="speaker__cred-item">
+                <div class="speaker__cred-dot"></div>
+                <span>Directivo en Cabify, Monitor Deloitte y First Solar</span>
+              </div>
+              <div class="speaker__cred-item">
+                <div class="speaker__cred-dot"></div>
+                <span>Propietario de +30 inmuebles y 4 empresas propias</span>
+              </div>
+              <div class="speaker__cred-item">
+                <div class="speaker__cred-dot"></div>
+                <span>16+ años de experiencia en inversión multiactivo</span>
+              </div>
+              <div class="speaker__cred-item">
+                <div class="speaker__cred-dot"></div>
+                <span>4 libros bestsellers sobre finanzas e inversión</span>
+              </div>
+              <div class="speaker__cred-item">
+                <div class="speaker__cred-dot"></div>
+                <span
+                  >Presente en RTVE, La Sexta, ABC, COPE y El Economista</span
+                >
+              </div>
+              <div class="speaker__cred-item">
+                <div class="speaker__cred-dot"></div>
+                <span>Financieramente libre desde los 38 años</span>
+              </div>
+            </div>
+
+            <a href="#entradas" class="btn btn--primary btn--lg"
+              >Quiero aprender de Richard →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     MEDIA
+════════════════════════════════════════════ -->
+    <section
+      style="
+        padding: 48px 0;
+        border-top: 1px solid #e0e0dc;
+        border-bottom: 1px solid #e0e0dc;
+      "
+    >
+      <div class="container">
+        <div
+          style="
+            text-align: center;
+            margin-bottom: 8px;
+            font-family: &quot;Oswald&quot;, sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            color: #bbb;
+            text-transform: uppercase;
+          "
+        >
+          Nos han visto en
+        </div>
+        <div class="media__strip">
+          <span class="media__logo">RTVE</span>
+          <span class="media__logo">LA SEXTA</span>
+          <span class="media__logo">ABC</span>
+          <span class="media__logo">COPE</span>
+          <span class="media__logo">EL CONFIDENCIAL</span>
+          <span class="media__logo">EL ECONOMISTA</span>
+          <span class="media__logo">ANTENA 3</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     5 PILARES — QUÉ APRENDERÁS
+════════════════════════════════════════════ -->
+    <section class="section section--light" id="programa">
+      <div class="container">
+        <div class="section-label section-label--light">
+          Lo que aprenderás en 5 horas
+        </div>
+        <h2 class="section-title">
+          Los 5 pilares de la<br /><em>libertad financiera</em>
+        </h2>
+        <p class="section-body">
+          Cada pilar es una palanca concreta. Saldrás con un plan claro,
+          adaptado a tu situación, que podrás aplicar desde el primer día.
+        </p>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-num">01</div>
+            <div class="pillar-title">Control del dinero</div>
+            <p class="pillar-body">
+              Aprende a gestionar tu flujo de caja para que sobre dinero a fin
+              de mes — sin recortes extremos ni sacrificios insostenibles.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">02</div>
+            <div class="pillar-title">
+              El tipo de inversión que encaja contigo
+            </div>
+            <p class="pillar-body">
+              Inmuebles, bolsa, fondos, negocio. Descubre cuál se adapta a tu
+              situación actual, tu perfil de riesgo y tus objetivos vitales.
+            </p>
+          </div>
+          <div class="pillar-card pillar-card--highlight">
+            <div class="pillar-num">03</div>
+            <div class="pillar-title">
+              Hacer crecer el dinero de forma sistemática
+            </div>
+            <p class="pillar-body">
+              La estrategia paso a paso para que tu patrimonio crezca de forma
+              estable y predecible — sin depender de golpes de suerte.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">04</div>
+            <div class="pillar-title">Gestión del riesgo y diversificación</div>
+            <p class="pillar-body">
+              Cómo multiplicar tu dinero sin poner todos los huevos en la misma
+              cesta. El error que comete casi todo el mundo y cómo evitarlo.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">05</div>
+            <div class="pillar-title">
+              El plan de libertad financiera en familia
+            </div>
+            <p class="pillar-body">
+              Define tu número exacto de libertad financiera y construye el plan
+              que te permita alcanzarlo con una fecha real en el calendario.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     AGENDA
+════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container--narrow">
+        <div class="section-label section-label--dark">Programa del evento</div>
+        <h2 class="section-title">¿Qué haremos ese <em>sábado</em>?</h2>
+        <p class="section-body">
+          Un formato intensivo y práctico de 5 horas. Sin relleno. Sin ventas
+          encubiertas. Todo el tiempo centrado en darte herramientas que puedes
+          aplicar desde el lunes.
+        </p>
+
+        <div class="agenda__list">
+          <div class="agenda__item">
+            <div class="agenda__time">09:00</div>
+            <div class="agenda__content">
+              <div class="agenda__title">
+                Bienvenida y diagnóstico de salida
+              </div>
+              <div class="agenda__desc">
+                Entenderás exactamente dónde estás y cuáles son los próximos
+                pasos concretos para avanzar.
+              </div>
+              <span class="agenda__tag agenda__tag--yellow"
+                >INCLUIDO EN TODAS LAS ENTRADAS</span
+              >
+            </div>
+          </div>
+          <div class="agenda__item">
+            <div class="agenda__time">09:45</div>
+            <div class="agenda__content">
+              <div class="agenda__title">
+                Pilar 1 + 2 — El dinero y la inversión adecuada
+              </div>
+              <div class="agenda__desc">
+                Gestión personal y cómo identificar el vehículo de inversión que
+                mejor encaja con tu situación actual.
+              </div>
+              <span class="agenda__tag agenda__tag--dark"
+                >TODOS LOS ASISTENTES</span
+              >
+            </div>
+          </div>
+          <div class="agenda__item">
+            <div class="agenda__time">11:00</div>
+            <div class="agenda__content">
+              <div
+                class="agenda__title"
+                style="display: flex; align-items: center; gap: 8px"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 5.5h8l-1 7H4L3 5.5z"
+                    stroke="#888"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 7.5h1.5a1.5 1.5 0 0 1 0 3H11"
+                    stroke="#888"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M2 14.5h10"
+                    stroke="#888"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  /></svg
+                >Coffee Break
+              </div>
+              <div class="agenda__desc">
+                Pausa y networking con otros asistentes.
+              </div>
+              <span class="agenda__tag agenda__tag--yellow"
+                >GOLD · PLATINUM · DIAMOND</span
+              >
+            </div>
+          </div>
+          <div class="agenda__item">
+            <div class="agenda__time">11:30</div>
+            <div class="agenda__content">
+              <div class="agenda__title">
+                Pilar 3 + 4 — Crecimiento sistemático y riesgo
+              </div>
+              <div class="agenda__desc">
+                La estrategia de crecimiento comprobada y cómo diversificar para
+                proteger y multiplicar tu patrimonio.
+              </div>
+              <span class="agenda__tag agenda__tag--dark"
+                >TODOS LOS ASISTENTES</span
+              >
+            </div>
+          </div>
+          <div class="agenda__item">
+            <div class="agenda__time">12:30</div>
+            <div class="agenda__content">
+              <div class="agenda__title">
+                Pilar 5 — Tu plan personal de libertad financiera
+              </div>
+              <div class="agenda__desc">
+                Ejercicio práctico: calculas tu número exacto y construyes tu
+                hoja de ruta con fechas reales.
+              </div>
+              <span class="agenda__tag agenda__tag--dark"
+                >TODOS LOS ASISTENTES</span
+              >
+            </div>
+          </div>
+          <div class="agenda__item">
+            <div class="agenda__time">13:30</div>
+            <div class="agenda__content">
+              <div class="agenda__title">Sesión de preguntas y cierre</div>
+              <div class="agenda__desc">
+                Richard responde en directo todas las dudas sobre tu situación
+                específica.
+              </div>
+              <span class="agenda__tag agenda__tag--dark"
+                >TODOS LOS ASISTENTES</span
+              >
+            </div>
+          </div>
+          <div class="agenda__item">
+            <div class="agenda__time">14:00</div>
+            <div class="agenda__content">
+              <div class="agenda__title">Fin del evento</div>
+              <div class="agenda__desc">
+                Sales con tu plan en papel. No con ideas — con pasos concretos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     PRICING
+════════════════════════════════════════════ -->
+    <section class="section section--light" id="entradas">
+      <div class="container">
+        <div class="section-label section-label--light">Elige tu entrada</div>
+        <h2 class="section-title">
+          Reserva tu plaza en el<br /><em>Investor Day Zaragoza</em>
+        </h2>
+        <p class="section-body">
+          Precio especial de lanzamiento. Plazas estrictamente limitadas por el
+          aforo del World Trade Center Zaragoza.
+        </p>
+
+        <!-- Tabs -->
+        <div class="pricing-tabs" role="tablist">
+          <button
+            class="pricing-tab pricing-tab--active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-presencial"
+            onclick="switchPricingTab('presencial', this)"
+          >
+            Presencial
+          </button>
+          <button
+            class="pricing-tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-online"
+            onclick="switchPricingTab('online', this)"
+          >
+            Online
+          </button>
+        </div>
+
+        <!-- ── PANEL PRESENCIAL ── -->
+        <div class="pricing-panel" id="panel-presencial" role="tabpanel">
+          <div class="pricing-presencial-layout">
+            <!-- FILA SUPERIOR: Silver · Gold · Platinum -->
+            <div class="pricing-grid pricing-grid--3">
+              <!-- SILVER -->
+              <div class="pricing-card" data-ticket="silver">
+                <div class="pricing-card__header">
+                  <div class="pricing-card__tier">Silver</div>
+                  <div class="pricing-card__price-wrap">
+                    <span class="pricing-card__original">27€</span>
+                    <span class="pricing-card__amount">12</span>
+                    <span class="pricing-card__currency">€</span>
+                  </div>
+                </div>
+                <div class="pricing-card__body">
+                  <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Acceso al evento completo (5h)
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Sesión diagnóstico financiero
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Pack de bienvenida
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Kit digital Investor Day
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Comunidad privada de WhatsApp
+                    </li>
+                  </ul>
+                  <a
+                    href="https://weeztix.shop/3k5ccx4w"
+                    class="btn btn--secondary btn--md btn--full"
+                    target="_blank"
+                    rel="noopener"
+                    >Comprar ahora</a
+                  >
+                  <div class="pricing-card__scarcity">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6.5 1.5L12 11.5H1L6.5 1.5z"
+                        stroke="#c0392b"
+                        stroke-width="1.4"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.5 5v2.5"
+                        stroke="#c0392b"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="6.5" cy="9.5" r="0.6" fill="#c0392b" />
+                    </svg>
+                    Últimas entradas a este precio
+                  </div>
+                </div>
+              </div>
+
+              <!-- GOLD — RECOMMENDED -->
+              <div
+                class="pricing-card pricing-card--recommended"
+                data-ticket="gold"
+              >
+                <div class="pricing-card__badge">MÁS POPULAR</div>
+                <div class="pricing-card__header">
+                  <div class="pricing-card__tier">Gold</div>
+                  <div class="pricing-card__price-wrap">
+                    <span class="pricing-card__original">47€</span>
+                    <span class="pricing-card__amount">27</span>
+                    <span class="pricing-card__currency" style="color: #fbc101"
+                      >€</span
+                    >
+                  </div>
+                </div>
+                <div class="pricing-card__body">
+                  <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Todo lo incluido en Silver
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Filas reservadas (zona Gold)
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Coffee Break VIP
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Replay vídeo del evento
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Sesión grupal online post-evento
+                    </li>
+                  </ul>
+                  <a
+                    href="https://weeztix.shop/u4t8avr9"
+                    class="btn btn--primary btn--md btn--full"
+                    target="_blank"
+                    rel="noopener"
+                    >Comprar ahora</a
+                  >
+                  <div class="pricing-card__scarcity">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6.5 1.5L12 11.5H1L6.5 1.5z"
+                        stroke="#c0392b"
+                        stroke-width="1.4"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.5 5v2.5"
+                        stroke="#c0392b"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="6.5" cy="9.5" r="0.6" fill="#c0392b" />
+                    </svg>
+                    Últimas 15 entradas disponibles
+                  </div>
+                </div>
+              </div>
+
+              <!-- PLATINUM -->
+              <div class="pricing-card" data-ticket="platinum">
+                <div class="pricing-card__header">
+                  <div class="pricing-card__tier">Platinum</div>
+                  <div class="pricing-card__price-wrap">
+                    <span class="pricing-card__original">97€</span>
+                    <span class="pricing-card__amount">57</span>
+                    <span class="pricing-card__currency">€</span>
+                  </div>
+                </div>
+                <div class="pricing-card__body">
+                  <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Todo lo incluido en Gold
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Audiolibro digital
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Videos exclusivos Investor Weekend
+                    </li>
+                    <li class="pricing-card__feature">
+                      <span class="pricing-card__feature-icon"
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="7.5"
+                            cy="7.5"
+                            r="6.5"
+                            fill="#f2faf6"
+                            stroke="#aad5be"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M4.5 7.5l2 2 4-4"
+                            stroke="#1a7a52"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                      >Resumen ejecutivo del evento
+                    </li>
+                  </ul>
+                  <a
+                    href="https://weeztix.shop/f9ggfyd7"
+                    class="btn btn--secondary btn--md btn--full"
+                    target="_blank"
+                    rel="noopener"
+                    >Comprar ahora</a
+                  >
+                  <div class="pricing-card__scarcity">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6.5 1.5L12 11.5H1L6.5 1.5z"
+                        stroke="#c0392b"
+                        stroke-width="1.4"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.5 5v2.5"
+                        stroke="#c0392b"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="6.5" cy="9.5" r="0.6" fill="#c0392b" />
+                    </svg>
+                    Últimas 2 entradas disponibles
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /pricing-grid--3 -->
+
+            <!-- FILA INFERIOR: Diamond — experiencia VIP full-width -->
+            <div class="pricing-diamond-featured" data-ticket="diamond">
+              <!-- Izquierda: icono + nombre -->
+              <div class="pricing-diamond-featured__left">
+                <svg
+                  class="pricing-diamond-featured__gem"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 3L28 12L16 29L4 12L16 3Z"
+                    fill="rgba(251,193,1,0.15)"
+                    stroke="#FBC101"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4 12H28"
+                    stroke="#FBC101"
+                    stroke-width="1"
+                    stroke-opacity="0.5"
+                  />
+                  <path
+                    d="M16 3L10 12L16 29"
+                    stroke="#FBC101"
+                    stroke-width="1"
+                    stroke-opacity="0.4"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 3L22 12L16 29"
+                    stroke="#FBC101"
+                    stroke-width="1"
+                    stroke-opacity="0.4"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="pricing-diamond-featured__eyebrow">
+                  Experiencia VIP
+                </div>
+                <div class="pricing-diamond-featured__name">Diamond</div>
+              </div>
+              <!-- Centro: beneficios en 2 columnas -->
+              <ul class="pricing-diamond-featured__features">
+                <li class="pricing-diamond-featured__feature">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="7"
+                      fill="rgba(251,193,1,0.12)"
+                      stroke="rgba(251,193,1,0.4)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M5 8l2.2 2.2L11 5.5"
+                      stroke="#FBC101"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Todo lo incluido en Platinum
+                </li>
+                <li class="pricing-diamond-featured__feature">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="7"
+                      fill="rgba(251,193,1,0.12)"
+                      stroke="rgba(251,193,1,0.4)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M5 8l2.2 2.2L11 5.5"
+                      stroke="#FBC101"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Kit Diamond físico exclusivo
+                </li>
+                <li class="pricing-diamond-featured__feature">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="7"
+                      fill="rgba(251,193,1,0.12)"
+                      stroke="rgba(251,193,1,0.4)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M5 8l2.2 2.2L11 5.5"
+                      stroke="#FBC101"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Asiento primera fila garantizado
+                </li>
+                <li class="pricing-diamond-featured__feature">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="7"
+                      fill="rgba(251,193,1,0.12)"
+                      stroke="rgba(251,193,1,0.4)"
+                      stroke-width="1"
+                    />
+                    <path
+                      d="M5 8l2.2 2.2L11 5.5"
+                      stroke="#FBC101"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Cena privada con Richard y Diego Gracia
+                </li>
+              </ul>
+              <!-- Derecha: precio + CTA -->
+              <div class="pricing-diamond-featured__right">
+                <div class="pricing-diamond-featured__price-wrap">
+                  <span class="pricing-diamond-featured__original">197€</span>
+                  <span class="pricing-diamond-featured__amount">127</span>
+                  <span class="pricing-diamond-featured__currency">€</span>
+                </div>
+                <a
+                  href="https://weeztix.shop/xw36u98f"
+                  class="btn btn--primary btn--lg"
+                  target="_blank"
+                  rel="noopener"
+                  style="white-space: nowrap; width: 100%; text-align: center"
+                  >Comprar ahora</a
+                >
+                <div class="pricing-diamond-featured__scarcity">
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M6.5 1.5L12 11.5H1L6.5 1.5z"
+                      stroke="#e57373"
+                      stroke-width="1.4"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.5 5v2.5"
+                      stroke="#e57373"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="6.5" cy="9.5" r="0.6" fill="#e57373" />
+                  </svg>
+                  Solo 5 entradas disponibles
+                </div>
+              </div>
+            </div>
+            <!-- /pricing-diamond-featured -->
+          </div>
+          <!-- /pricing-presencial-layout -->
+        </div>
+        <!-- /panel-presencial -->
+
+        <!-- ── PANEL ONLINE ── -->
+        <div
+          class="pricing-panel pricing-panel--hidden"
+          id="panel-online"
+          role="tabpanel"
+        >
+          <!-- Nudge hacia presencial -->
+          <div class="pricing-online-intro">
+            <div class="pricing-online-intro__nudge">
+              ¿Puedes venir? La experiencia presencial multiplica los resultados
+            </div>
+          </div>
+
+          <div class="pricing-online-grid">
+            <!-- SILVER ONLINE -->
+            <div class="pricing-card" data-ticket="silver-online">
+              <div class="pricing-card__header">
+                <div
+                  class="pricing-card__tier"
+                  style="font-size: 13px; letter-spacing: 0.06em"
+                >
+                  Silver Online
+                </div>
+                <div class="pricing-card__price-wrap">
+                  <span class="pricing-card__original">17€</span>
+                  <span class="pricing-card__amount">9</span>
+                  <span class="pricing-card__currency">€</span>
+                </div>
+                <div
+                  style="
+                    font-size: 11px;
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-top: 6px;
+                  "
+                >
+                  Acceso básico en streaming
+                </div>
+              </div>
+              <div class="pricing-card__body">
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Streaming en directo del evento (5h)
+                  </li>
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Sesión diagnóstico financiero
+                  </li>
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Kit digital Investor Day
+                  </li>
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Comunidad privada de WhatsApp
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--secondary btn--md btn--full"
+                  >Comprar ahora</a
+                >
+              </div>
+            </div>
+
+            <!-- GOLD ONLINE — RECOMENDADO -->
+            <div
+              class="pricing-card pricing-card--recommended"
+              data-ticket="gold-online"
+            >
+              <div class="pricing-card__badge">MÁS COMPLETO</div>
+              <div class="pricing-card__header">
+                <div
+                  class="pricing-card__tier"
+                  style="font-size: 13px; letter-spacing: 0.06em"
+                >
+                  Gold Online
+                </div>
+                <div class="pricing-card__price-wrap">
+                  <span class="pricing-card__original">37€</span>
+                  <span class="pricing-card__amount" style="color: #fbc101"
+                    >19</span
+                  >
+                  <span class="pricing-card__currency" style="color: #fbc101"
+                    >€</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 11px;
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-top: 6px;
+                  "
+                >
+                  Acceso completo con extras
+                </div>
+              </div>
+              <div class="pricing-card__body">
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Todo lo incluido en Silver Online
+                  </li>
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Replay vídeo completo del evento
+                  </li>
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Sesión grupal online post-evento
+                  </li>
+                  <li class="pricing-card__feature">
+                    <span class="pricing-card__feature-icon"
+                      ><svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="7.5"
+                          cy="7.5"
+                          r="6.5"
+                          fill="#f2faf6"
+                          stroke="#aad5be"
+                          stroke-width="1"
+                        />
+                        <path
+                          d="M4.5 7.5l2 2 4-4"
+                          stroke="#1a7a52"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    >Audiolibro digital
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--md btn--full"
+                  >Comprar ahora</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- /pricing-online-grid -->
+
+          <div class="pricing-online-note" style="margin-top: 20px">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle
+                cx="6.5"
+                cy="6.5"
+                r="5.5"
+                stroke="#bbb"
+                stroke-width="1.2"
+              />
+              <path
+                d="M6.5 4v3.5M6.5 9v.5"
+                stroke="#bbb"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              />
+            </svg>
+            Sin desplazamiento · Asiste desde donde estés
+          </div>
+        </div>
+        <!-- /panel-online -->
+
+        <!-- Guarantee -->
+        <div class="guarantee-box">
+          <div class="guarantee-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M20 4L7 9v12c0 7.5 5.8 14 13 15 7.2-1 13-7.5 13-15V9L20 4z"
+                fill="#f2faf6"
+                stroke="#aad5be"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13 20l4.5 4.5 9.5-9.5"
+                stroke="#1a7a52"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div>
+            <div class="guarantee-title">Satisfacción garantizada</div>
+            <p class="guarantee-text">
+              Si asistes al Investor Day y sientes que no ha aportado valor real
+              a tu situación financiera, contacta con nuestro equipo en las 48h
+              siguientes al evento y te devolvemos el importe íntegro de tu
+              entrada. Sin preguntas. Llevamos más de 15 años haciendo esto —
+              sabemos lo que funciona.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════ -->
+    <section class="section" id="faq">
+      <div class="container--narrow">
+        <div class="section-label section-label--dark">
+          Preguntas frecuentes
+        </div>
+        <h2 class="section-title">Resolvemos tus<br /><em>dudas</em></h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Necesito conocimientos previos de inversión para asistir?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              No. El evento está diseñado específicamente para personas que
+              tienen ahorros pero no saben cómo invertirlos, o que quieren
+              empezar desde cero. Richard explica todo de forma práctica y sin
+              jerga financiera.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Qué incluye exactamente el precio de registro?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Todas las entradas incluyen: acceso completo al evento de 5 horas,
+              la sesión de diagnóstico financiero personalizado valorada en 49€,
+              el pack de bienvenida y la comunidad privada de WhatsApp. Las
+              entradas Gold y Diamond incluyen beneficios adicionales detallados
+              en la tabla de arriba.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Cuándo y dónde es exactamente el evento?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Sábado 20 de junio de 2026, de 09:00 a 14:00h. El evento se
+              celebra en el World Trade Center Zaragoza (WTCZ), situado en C/
+              María Zambrano, 31, Zaragoza. Te recomendamos llegar 15 minutos
+              antes para el registro y bienvenida.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Habrá tiempo para hacer preguntas personales a Richard?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Sí. El evento incluye una sesión final de preguntas y respuestas
+              donde Richard responde en directo las dudas de los asistentes.
+              También habrá momentos durante el coffee break para interactuar de
+              manera más informal.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Habrá opciones de networking con otros asistentes?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Absolutamente. El Investor Day reúne a personas con un perfil muy
+              similar — personas con empleo estable que quieren construir
+              libertad financiera. El networking es uno de los elementos más
+              valorados por los asistentes en ediciones anteriores.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Qué tengo que llevar al evento?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Tu entrada (digital o impresa), papel y bolígrafo para tomar
+              notas, y ganas de trabajar. Te recomendamos también traer una idea
+              aproximada de cuánto tienes ahorrado y cuáles son tus objetivos —
+              eso te permitirá personalizar mejor el ejercicio del Pilar 5.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Qué pasa si no puedo asistir el día del evento?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Si no puedes asistir, puedes transferir tu entrada a otra persona
+              sin coste adicional hasta 48 horas antes del evento. Si necesitas
+              cancelar, contacta con el equipo antes del 13 de junio de 2026 y
+              te realizaremos la devolución íntegra. Pasada esa fecha, la entrada
+              no es reembolsable pero sí transferible.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Puedo contactar al equipo si tengo más dudas?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Sí. Puedes contactarnos a través del formulario de contacto en
+              elmetodorico.com o escribirnos por WhatsApp. Nuestro equipo
+              responde en menos de 24 horas en días laborables.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     FINAL CTA
+════════════════════════════════════════════ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="final-cta">
+          <div
+            class="section-label"
+            style="justify-content: center; display: flex; margin-bottom: 16px"
+          >
+            Quedan muy pocas plazas
+          </div>
+          <h2 class="final-cta__headline">
+            Cada mes que pasa es<br />un mes sin <em>ingresos pasivos</em>
+          </h2>
+          <p class="final-cta__subtext">
+            Zaragoza. 20 de junio de 2026. 5 horas que pueden cambiar el rumbo
+            de tu vida financiera.
+          </p>
+
+          <div class="final-cta__countdown">
+            <div class="countdown__block">
+              <div class="countdown__num" id="cd2-days">47</div>
+              <div class="countdown__label">Días</div>
+            </div>
+            <div class="countdown__divider">:</div>
+            <div class="countdown__block">
+              <div class="countdown__num" id="cd2-hours">12</div>
+              <div class="countdown__label">Horas</div>
+            </div>
+            <div class="countdown__divider">:</div>
+            <div class="countdown__block">
+              <div class="countdown__num" id="cd2-mins">38</div>
+              <div class="countdown__label">Min</div>
+            </div>
+            <div class="countdown__divider">:</div>
+            <div class="countdown__block">
+              <div class="countdown__num" id="cd2-secs">05</div>
+              <div class="countdown__label">Seg</div>
+            </div>
+          </div>
+
+          <a href="#entradas" class="btn btn--primary btn--lg"
+            >Reservar mi entrada ahora →</a
+          >
+          <div class="final-cta__meta">
+            Satisfacción garantizada · Plazas limitadas por aforo
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">EL MÉTODO <span>RICO</span></div>
+          <div class="footer__copy">
+            © 2026 El Método Rico · Todos los derechos reservados · Aviso legal
+            · Política de privacidad
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+    <script src="landing-zaragoza-v2.js"></script>
+  </body>
+</html>
